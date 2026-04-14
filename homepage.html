@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Delight Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            background: #111;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: orange;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            border: none;
+            background: orange;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /* Featured Section */
+        .featured {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .featured h2 {
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .card h3 {
+            padding: 10px;
+        }
+
+        /* Reviews */
+        .reviews {
+            background: #f4f4f4;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .review {
+            margin: 15px auto;
+            max-width: 600px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Spice Delight</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Welcome to Spice Delight</h2>
+            <p>Taste the Tradition, Feel the Flavor</p>
+            <button>View Menu</button>
+        </div>
+    </section>
+
+    <!-- Featured Dishes -->
+    <section class="featured">
+        <h2>Our Special Dishes</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604908176997-4318c55f1c1c" alt="">
+                <h3>Chicken Biryani</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="">
+                <h3>Zinger Burger</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604908554167-22c0c2f7f3b7" alt="">
+                <h3>BBQ Platter</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <h2>What Our Customers Say</h2>
+        <p class="review">"Amazing food and great service!"</p>
+        <p class="review">"Best biryani in town, highly recommended!"</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Spice Delight | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

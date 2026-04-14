@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Spice Delight</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8f8f8;
+        }
+
+        /* Navbar */
+        nav {
+            background: #111;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            color: orange;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+        }
+
+        /* Page Title */
+        .title {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .title h2 {
+            font-size: 35px;
+            color: #333;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 30px 50px;
+        }
+
+        .category {
+            margin-bottom: 40px;
+        }
+
+        .category h3 {
+            margin-bottom: 15px;
+            color: orange;
+            border-bottom: 2px solid orange;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        .item img {
+            width: 100%;
+            height: 180px;
+        }
+
+        .item-content {
+            padding: 10px;
+        }
+
+        .item-content h4 {
+            margin-bottom: 5px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px){
+            .items {
+                justify-content: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>Spice Delight</h1>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Title -->
+    <div class="title">
+        <h2>Our Menu</h2>
+    </div>
+
+    <!-- Menu Section -->
+    <section class="menu">
+
+        <!-- Starters -->
+        <div class="category">
+            <h3>Starters</h3>
+            <div class="items">
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1604908176997-4318c55f1c1c">
+                    <div class="item-content">
+                        <h4>Chicken Wings</h4>
+                        <p class="price">Rs. 450</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+                    <div class="item-content">
+                        <h4>Fries</h4>
+                        <p class="price">Rs. 250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="category">
+            <h3>Main Course</h3>
+            <div class="items">
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1604908554167-22c0c2f7f3b7">
+                    <div class="item-content">
+                        <h4>Chicken Biryani</h4>
+                        <p class="price">Rs. 350</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1605475129013-4c33f6db0d44">
+                    <div class="item-content">
+                        <h4>Karahi</h4>
+                        <p class="price">Rs. 900</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BBQ -->
+        <div class="category">
+            <h3>BBQ</h3>
+            <div class="items">
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee">
+                    <div class="item-content">
+                        <h4>BBQ Platter</h4>
+                        <p class="price">Rs. 1200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="category">
+            <h3>Drinks</h3>
+            <div class="items">
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+                    <div class="item-content">
+                        <h4>Cold Drink</h4>
+                        <p class="price">Rs. 120</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e">
+                    <div class="item-content">
+                        <h4>Fresh Juice</h4>
+                        <p class="price">Rs. 200</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Spice Delight | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
